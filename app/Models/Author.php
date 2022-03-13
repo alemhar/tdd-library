@@ -9,7 +9,10 @@ class Author extends Model
 {
     use HasFactory;
 
+    protected $dates = ['dob'];
+
     protected $fillable = ['name', 'dob'];
 
-    protected $dates = ['dob'];
+    
+
 }
