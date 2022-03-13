@@ -18,6 +18,10 @@ class BookController extends Controller
         $book->update($data);
     }
 
+    public function destroy(Book $book){
+        $book->delete();
+    }
+
     protected function validateBook($request){
         return $request->validate([
             'title' => 'required',
